@@ -1,0 +1,90 @@
+// .cart-no{
+//     position: absolute;
+//     min-height: 25px;
+//     min-width: 25px;
+//     border-radius: 50%;
+//     font-size: 1em;
+//     background: blue;
+//     color: white;
+//     text-align: center;
+//     top: -12px;
+//     right: 32px;
+// }
+
+// a{ 
+//     text-decoration: none;
+//     color: #343a40;
+//     &.active{
+//         color: orange;
+//     }
+// }
+
+
+
+
+
+
+ul{
+	display: flex;
+	width: 100%;
+//	height: 80vh;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: space-between;
+	text-align: center;
+    list-style-type: none;
+}
+li {
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: black;
+	min-width: 80px;
+	margin: auto;
+}
+
+li:hover {
+  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+	font-weight: bold;
+}
+.active {
+  transform: translateY(4px);
+    background-image: url('https://scottyzen.sirv.com/Images/v/button.png')!important;
+    background-size: 100% 100% !important;
+    color: #27262c !important;
+    animation: spring 300ms ease-out !important;
+    text-shadow: 0 -1px 0 #ef816c !important;
+    font-weight: bold !important;
+}
+
+// @keyframes spring {
+//   15% {
+//     -webkit-transform-origin: center center;
+//     -webkit-transform: scale(1.2, 1.1);
+//   }
+//   40% {
+//     -webkit-transform-origin: center center;
+//     -webkit-transform: scale(0.95, 0.95);
+//   }
+//   75% {
+//     -webkit-transform-origin: center center;
+//     -webkit-transform: scale(1.05, 1);
+//   }
+//   100% {
+//     -webkit-transform-origin: center center;
+//     -webkit-transform: scale(1, 1);
+//   }
+// }
+
+// .shameless-plug{
+//   position: absolute;
+//   bottom: 10px;
+//   right: 0;
+//   padding: 8px 20px;
+//   color: #ccc;
+//   text-decoration: none;
+// }

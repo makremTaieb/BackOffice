@@ -1,0 +1,32 @@
+<div class="container-fluid mt-3">
+    <div class="row">
+
+        <section class="col-2">
+            <ul class="list-group">
+                <!-- <li class="list-group-item" *ngFor="let brand of actionUsers" [class.active]="brand.id === this.shopParams.brandId" [value]="brand.id" (click)="onBrandSelected(brand.id)"> -->
+                <li class="list-group-item" *ngFor="let brand of actionUsers" [value]="brand">
+                  <a> {{brand}} </a>
+                  <a> {{brand}} </a>
+                  <a> {{brand}} </a>
+                </li>
+
+            </ul>
+        </section>
+        <section class="col-10">
+            <div class="row  my-1" style="font-weight: bold;">
+                <div class="col-2"> DisplayName </div>
+                <div class="col-2"> GivenName </div>
+                <div class="col-2"> MobilePhone </div>
+                <div class="col-3"> Mail  </div>
+                <div class="col-3 text-center">
+                    Actions
+                </div>
+            </div>
+            <div class="row" *ngFor="let item of users">
+                <app-user-item [user]="item" class="col-12 my-1"></app-user-item>
+            </div>
+
+            
+        </section>
+    </div>
+</div>

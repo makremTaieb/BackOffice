@@ -1,0 +1,22 @@
+
+
+<div class="row  h-100" *ngIf="user" >
+
+    <div class="col-2"> {{user.displayName}} </div>
+    <div class="col-2"> {{user.givenName}} </div>
+    <div class="col-2"> {{user.mobilePhone}} </div>
+    <div class="col-3"> {{user.mail}} </div>
+    <div class="col-3 btn-group"> 
+        <button class="btn btn-primary " routerLink="/users/{{user.id}}" ><i class="fa fa-pencil" aria-hidden="true"></i> Modifier </button>
+        <button class="btn btn-outline-secondary ml-1"> Reset password </button>
+    </div>
+</div>
+<!-- <div class="card-body d-flex flex-column">
+    <a>
+        <h6 class="text-uppercase"> {{product.name}} </h6>
+    </a>
+    <span class="mb-2"> {{product.price | currency }} </span>
+
+
+
+</div> -->
