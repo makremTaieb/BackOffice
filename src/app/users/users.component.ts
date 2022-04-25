@@ -21,9 +21,9 @@ export class UsersComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.userService.token().subscribe(data => {
-      console.log(data)
-    })
+    // this.userService.token().subscribe(data => {
+    //   console.log(data)
+    // })
   }
 
 }

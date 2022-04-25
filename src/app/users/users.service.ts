@@ -10,9 +10,7 @@ export class UsersService {
   baseUrl = 'https://localhost:5001/api/';
   constructor(private http: HttpClient) { }
 
-  token(): Observable<any> {
-   
-  }
+
 
   getProducts(){
 
